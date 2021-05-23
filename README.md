@@ -1,8 +1,14 @@
 # Recriando a Interface do Netflix
-
-
-
-
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/silasmakou/recriando_interface_netflix">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/silasmakou/recriando_interface_netflix?logo=html">
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/silasmakou/recriando_interface_netflix?color=green">
+  <br>
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/last-commit/silasmakou/recriando_interface_netflix">
+  <a href="https://www.linkedin.com/in/silas-coutinho/">
+    <img alt="Made by Silas" src="https://img.shields.io/badge/made%20by-Silas-%2304D361">
+  </a>
+</p>
 
 
 
