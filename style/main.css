@@ -1,0 +1,226 @@
+:root {
+    --vermelho: #E50914; /*cria variaveis na raiz do documento css*/
+    --preto: #141414;
+}
+
+* { /*utilizado para da reset de posicionamento entre diversos navegadores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base */
+
+body {
+    background: var(--preto); /*forma de chamar a variavel criada*/
+    font-family: 'Arial', Times, serif;
+    color: white;
+    
+}
+
+header .container {
+    display: flex; /*ativa o alinhamento de elementos em tela com flexbox colocando o item na mesma linha*/
+    flex-direction: row; /*alinhamento default em linha se não coloca o flex fica em linha do mesmo jeito*/
+    align-items: center; /*alinha verticalmente no centro*/
+    justify-content: space-between; /*alinha horizontalmente com espaço entre o item anterior (h2)*/
+    margin-bottom: 10px;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover { /* muda de cor quando passa o mouse em cima do item de menu*/
+    color: #fff;
+}
+
+/* Filme Principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capa_quarto_de_guerra.jpg); /*utilizando a propriedade linear-gradiente para realçar a cor do texto em relação a imagem de fundo*/
+
+    height: 600px;
+    background-size: cover; /* propiedade para ajeitar a imagem ao tamanho da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    width: 590px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#141414, #999);
+    background: -webkit-linear-gradient(#141414, #999);
+    background: -o-linear-gradient(#141414, #999);
+}
+
+
+.fechar {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.fechar:hover {
+    background: var(--vermelho);
+}
+
+.modal2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal2 > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#141414, #999);
+    background: -webkit-linear-gradient(#141414, #999);
+    background: -o-linear-gradient(#141414, #999);
+}
+
+.fechar2 {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.fechar2:hover {
+    background: var(--vermelho);
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* mudar ponteiro para aparecer botão*/
+    transition: .3s ease all; /*suaviza o efeito do hover*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/* WRAPPER = ENVELOPAR -> OBJETIVO DA CLASSE CONTEINER*/
